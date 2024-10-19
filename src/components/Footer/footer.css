@@ -1,0 +1,15 @@
+.footer-container {
+    text-align: center;
+}
+
+.footer-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media(max-width: 540px) {
+    .footer-body {
+        display: grid;
+        width: 100%
+    }
+}

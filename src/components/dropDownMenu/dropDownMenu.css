@@ -1,0 +1,23 @@
+.dropdown-container {
+    background-color: white;
+    color: black;
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    z-index: 10;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+li {
+    padding: 1rem 0;
+}
+
+@media(max-width: 768px) {
+
+}

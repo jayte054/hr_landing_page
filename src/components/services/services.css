@@ -1,0 +1,28 @@
+.services-container {
+    text-align: center;
+    background-color: rgb(192, 193, 214);
+    padding: 1rem;
+}
+
+.services-body {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem
+}
+
+.services-body-content {
+    background-color: rgb(218, 219, 231);
+    box-shadow: 5px 5px 10px gray;
+    text-align: center;
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+@media(max-width: 540px) {
+    .services-body {
+        display: grid;
+    }
+    .services-body-content {
+        margin: 1rem 0;
+    }
+}

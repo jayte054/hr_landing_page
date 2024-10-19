@@ -1,0 +1,78 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(119, 123, 173);
+}
+
+.navbar-image {
+   display:flex;
+}
+
+.navbar-image img {
+    width:15rem;
+    height: 8rem;
+}
+
+.navbar-sections span {
+   padding: 0 .5rem
+}
+
+.navbar-auth span {
+    padding: 0 0.4rem
+}
+
+.login span{
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-sections {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: rgb(119, 123, 173);
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+    transform: translateX(100%);
+    display: none;
+
+  }
+
+  .navbar-sections.open {
+    transform: translateX(0);
+  }
+
+  .burger-menu-icon {
+    padding-top: 1rem;
+    display:flex
+  }
+}
+
+/* Hide Navbar Sections on Small Screens Initially */
+@media (max-width: 768px) {
+    .navbar-container {
+        justify-content: space-between;
+        padding: 0 1rem;
+        align-items: center;
+    }
+  .navbar-sections, .navbar-auth {
+    display: none;
+  }
+
+  .navbar-sections.open {
+    transform: translateX(0)
+  }
+}

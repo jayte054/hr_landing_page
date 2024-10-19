@@ -1,0 +1,40 @@
+.generic-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: rgb(173, 207, 234);
+}
+
+.primary {
+  background-color: #007bff;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.secondary {
+  background-color: #6c757d;
+}
+
+.secondary:hover {
+  background-color: #5a6268;
+}
+
+.danger {
+  background-color: #dc3545;
+}
+
+.danger:hover {
+  background-color: #c82333;
+}
+
+/* Disabled Button */
+.btn:disabled {
+  background-color: #e0e0e0;
+  color: #6c757d;
+  cursor: not-allowed;
+}
