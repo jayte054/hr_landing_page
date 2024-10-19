@@ -1,4 +1,3 @@
-import { AboutUs } from "../aboutUs/aboutUs";
 import "./dropDownMenu.css"
 
 export const DropDownMenu = () => {

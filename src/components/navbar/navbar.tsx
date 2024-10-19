@@ -1,7 +1,5 @@
-import { useState } from "react";
 import {FaCaretDown, FaBars, FaTimes} from "react-icons/fa"
 import { GenericButton } from "../button.tsx/button";
-import { DropDownMenu } from "../dropDownMenu/dropDownMenu";
 
 import "./navbar.css"
 
@@ -9,7 +7,6 @@ import "./navbar.css"
 export const Navbar = ({ isMenuOpen, setIsMenuOpen }: any) => {
   const image =
     "https://cdn.hashnode.com/res/hashnode/image/upload/v1724055539467/36a4b661-bd4f-488c-88d9-7109189330e5.png";
-  // const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen((prev: any) => !prev);
 
@@ -39,7 +36,6 @@ export const Navbar = ({ isMenuOpen, setIsMenuOpen }: any) => {
       </div>
       <div className="burger-menu-icon" onClick={toggleMenu}>
         {isMenuOpen ? <FaTimes /> : <FaBars />}
-        {/* {isMenuOpen && <DropDownMenu />} */}
       </div>
     </div>
   );
