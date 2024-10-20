@@ -14,7 +14,8 @@
 }
 
 .title-div {
-    width: 35%
+    width: 35%;
+    cursor: pointer;
 }
 
 .engage-title {
